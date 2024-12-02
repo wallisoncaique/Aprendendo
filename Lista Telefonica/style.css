@@ -1,6 +1,6 @@
 html,
 body {
-    height: 100%; /*definindo que a pagina vai ter a altura total da pagina*/
+    height: 100%;
 }
 
 body {
@@ -9,11 +9,10 @@ body {
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-    display:flex; /*para centralizar a pagina no meio e com o align center ficou alinhado no meio, esse display flex é para que fique no meio da pagina, mas não centralizado*/
+    display:flex; 
     justify-content: center;
-    align-items: center; /*centralizou o conteudo no meio da pagina*/
-   flex-direction: column; /*com flex column fica  todos os itens alinhados um em baixo do outro, sem ele fica alinhado um ao lado do outro*/
-
+    align-items: center; 
+   flex-direction: column;
 }
 
 .main-title {
@@ -23,34 +22,34 @@ body {
 
 .list-wrapper {
     background-color: rgb(223, 235, 183);
-    width: 90%; /*lagura dentro do body de 90% com o comando abaixo de 500px de largura maxima */
-    max-width: 500px; /*criando uma largura maxima dentro de uma largura de 90%*/
-    max-height: 400px; /*para criar uma altura maxima*/
-    overflow-y: auto; /*Para rolar apenas na lateral*/
-    border-radius: 5px; /*cria um arredondamento na borda, nesse caso criou na janela da lista*/
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /*cria uma sombra no fundo do container de lista*/
+    width: 90%; 
+    max-width: 500px;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .list {
-    list-style-type: none; /*none para remover as configurações de lista, tirar os pontinhos*/
-    padding: 0; /*para tirar a margem que tem por padrão, com isso os itens ficam colados no canto*/
+    list-style-type: none;
+    padding: 0;
     margin: 0;
 }
 
 .list-item {
-    display: flex; /*alinhou todos os itens um ao lado do outro*/
+    display: flex;
     border-bottom: 1px solid #d3d3d3;
     padding: 14px;
 }
 
 .list-item__imagem img {
-    width: 70px; /*determinou o tamanho da imagem*/
+    width: 70px;
     border-radius: 50%; 
 }
 
 .list-item__content {
-    padding: 0 25px; /*parar da margem ao conteudo em texto*/
-    flex-grow: 1; /*todo o espaço que sobra passa para o conteudo dessa classe*/
+    padding: 0 25px;
+    flex-grow: 1;
 }
 
 .list-item__name {
@@ -70,9 +69,9 @@ body {
 
 .list-item__action {
     display: flex;
-    gap:16px; /*espaço entre os itens, nesse caso as imagens de delete e edite*/
+    gap:16px;
     align-items: center;
-    opacity: 0; /*o item fica ivisivel e aparece por causa do hover que está 0,3*/
+    opacity: 0;
 }
 
 .list-item:hover .list-item__action {
